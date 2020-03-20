@@ -1,0 +1,10 @@
+C:\Users\Reshard\Desktop\myGame\myGame\myGame\bin\Debug\myGame.exe.config
+C:\Users\Reshard\Desktop\myGame\myGame\myGame\bin\Debug\myGame.exe
+C:\Users\Reshard\Desktop\myGame\myGame\myGame\bin\Debug\myGame.pdb
+C:\Users\Reshard\Desktop\myGame\myGame\myGame\obj\Debug\myGame.csprojAssemblyReference.cache
+C:\Users\Reshard\Desktop\myGame\myGame\myGame\obj\Debug\myGame.Form1.resources
+C:\Users\Reshard\Desktop\myGame\myGame\myGame\obj\Debug\myGame.Properties.Resources.resources
+C:\Users\Reshard\Desktop\myGame\myGame\myGame\obj\Debug\myGame.csproj.GenerateResource.cache
+C:\Users\Reshard\Desktop\myGame\myGame\myGame\obj\Debug\myGame.csproj.CoreCompileInputs.cache
+C:\Users\Reshard\Desktop\myGame\myGame\myGame\obj\Debug\myGame.exe
+C:\Users\Reshard\Desktop\myGame\myGame\myGame\obj\Debug\myGame.pdb
