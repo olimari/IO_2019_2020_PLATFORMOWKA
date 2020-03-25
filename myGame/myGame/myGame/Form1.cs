@@ -20,6 +20,11 @@ namespace myGame
         int G = 20; //wysokosc skoku
         int force;
 
+        bool gifIsNotLoaded = true; //instrukcja do pomocy obslugi animacji chodzenia
+        bool facingRight = false;
+        bool facingLeft = false;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -38,13 +43,13 @@ namespace myGame
                 left = false;
             }
 
-
+            //ruch lewo / prawo
             if (right == true) { character.Left += 5; }
             if (left == true) { character.Left -= 5; }
 
-            if( jump==true )
+            //spadanie jezeli gracz skoczyl
+            if ( jump==true )
             {
-                //spadanie jezeli gracz skoczyl
                 character.Top -= force;
                 force -= 1;
             }
@@ -52,6 +57,13 @@ namespace myGame
             if(character.Top + character.Height >= screen.Height)
             {
                 character.Top = screen.Height - character.Height;
+                if (jump == true)
+                {
+                    if (right == true)
+                        character.Image = Image.FromFile("idle.gif");
+                    if (left == true)
+                        character.Image = Image.FromFile("idle_l.gif");
+                }
                 jump = false;
             }
             else
@@ -66,30 +78,80 @@ namespace myGame
             {
                 character.Top = screen.Height - block.Height - character.Height;
                 force = 0;
+                if (jump == true)
+                { 
+                    if(right==true)
+                        character.Image = Image.FromFile("idle.gif");
+                    if(left==true)
+                        character.Image = Image.FromFile("idle_l.gif");
+                }
                 jump = false;
             }
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Right) { right = true; }
-            if(e.KeyCode == Keys.Left) { left = true; }
-            if(e.KeyCode == Keys.Escape) { this.Close(); } //zamykanie poprzez esc.
-
-            if(jump!=true)
+            if(e.KeyCode == Keys.Right)
             {
-                if(e.KeyCode == Keys.Space)
+                facingLeft = false;
+                right = true;
+                facingRight = true;
+                if (gifIsNotLoaded == true)
+                {
+                    character.Image = Image.FromFile("right.gif");
+                    gifIsNotLoaded = false;
+                }
+            }
+            if(e.KeyCode == Keys.Left)
+            {
+                facingRight = false;
+                left = true;
+                facingLeft = true;
+                if (gifIsNotLoaded == true)
+                {
+                    character.Image = Image.FromFile("left.gif");
+                    gifIsNotLoaded = false;
+                }
+            }
+            //zamykanie poprzez esc.
+            if (e.KeyCode == Keys.Escape) { this.Close(); }
+
+            //skok
+            if (jump!=true)
+            {
+                if(e.KeyCode == Keys.Up)
                 {
                     jump = true;
                     force = G;
+
+                    if(facingRight==true)
+                    {
+                        character.Image = Image.FromFile("jump.png");
+                    }
+
+                    if (facingLeft == true)
+                    {
+                        character.Image = Image.FromFile("jump_l.png");
+                    }  
                 }
             }
         }
 
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode == Keys.Right) { right = false; }
-            if(e.KeyCode == Keys.Left) { left = false; }
+            gifIsNotLoaded=true;
+            if(e.KeyCode == Keys.Right)
+            { 
+                right = false;
+                if(jump != true )
+                    character.Image = Image.FromFile("idle.gif");
+            }
+            if(e.KeyCode == Keys.Left) 
+            { 
+                left = false;
+                if (jump != true)
+                    character.Image = Image.FromFile("idle_l.gif");
+            }
         }
     }
 }

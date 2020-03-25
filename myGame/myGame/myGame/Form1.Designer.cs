@@ -30,14 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Timer timer1;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.screen = new System.Windows.Forms.Panel();
-            this.character = new System.Windows.Forms.PictureBox();
             this.block = new System.Windows.Forms.PictureBox();
+            this.character = new System.Windows.Forms.PictureBox();
             timer1 = new System.Windows.Forms.Timer(this.components);
             this.screen.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.character)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.block)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.character)).BeginInit();
             this.SuspendLayout();
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // screen
             // 
@@ -49,29 +55,24 @@
             this.screen.Size = new System.Drawing.Size(800, 450);
             this.screen.TabIndex = 0;
             // 
-            // character
-            // 
-            this.character.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.character.Location = new System.Drawing.Point(1, 425);
-            this.character.Name = "character";
-            this.character.Size = new System.Drawing.Size(25, 25);
-            this.character.TabIndex = 0;
-            this.character.TabStop = false;
-            // 
-            // timer1
-            // 
-            timer1.Enabled = true;
-            timer1.Interval = 1;
-            timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // block
             // 
             this.block.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.block.Location = new System.Drawing.Point(382, 400);
+            this.block.Location = new System.Drawing.Point(375, 351);
             this.block.Name = "block";
-            this.block.Size = new System.Drawing.Size(100, 50);
+            this.block.Size = new System.Drawing.Size(100, 99);
             this.block.TabIndex = 1;
             this.block.TabStop = false;
+            // 
+            // character
+            // 
+            this.character.BackColor = System.Drawing.Color.Transparent;
+            this.character.Image = ((System.Drawing.Image)(resources.GetObject("character.Image")));
+            this.character.Location = new System.Drawing.Point(0, 400);
+            this.character.Name = "character";
+            this.character.Size = new System.Drawing.Size(50, 50);
+            this.character.TabIndex = 0;
+            this.character.TabStop = false;
             // 
             // Form1
             // 
@@ -85,8 +86,8 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             this.screen.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.character)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.block)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.character)).EndInit();
             this.ResumeLayout(false);
 
         }
