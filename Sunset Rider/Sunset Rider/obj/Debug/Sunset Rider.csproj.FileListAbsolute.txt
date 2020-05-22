@@ -1,0 +1,10 @@
+C:\Users\oliwk\Desktop\Sunset Rider\Sunset Rider\bin\Debug\Sunset Rider.exe.config
+C:\Users\oliwk\Desktop\Sunset Rider\Sunset Rider\bin\Debug\Sunset Rider.exe
+C:\Users\oliwk\Desktop\Sunset Rider\Sunset Rider\bin\Debug\Sunset Rider.pdb
+C:\Users\oliwk\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.csprojAssemblyReference.cache
+C:\Users\oliwk\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.Form1.resources
+C:\Users\oliwk\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.Properties.Resources.resources
+C:\Users\oliwk\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.csproj.GenerateResource.cache
+C:\Users\oliwk\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.csproj.CoreCompileInputs.cache
+C:\Users\oliwk\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.exe
+C:\Users\oliwk\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.pdb
