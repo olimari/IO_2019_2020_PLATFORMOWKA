@@ -21,9 +21,14 @@ namespace Sunset_Rider
         int force = 8;
         int predkoscSkoku = 10;
 
-        int predkoscTla = 8;
+        //int predkoscTla = 8;
         int predkoscGracza = 10;
-        
+
+
+        bool gifIsNotLoaded = true; //instrukcja do pomocy obslugi animacji chodzenia
+        bool facingRight = false;
+        bool facingLeft = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -44,7 +49,7 @@ namespace Sunset_Rider
                 gracz.Left -= predkoscGracza;
             }
 
-            if (prawo == true && tlo.Left > -1290)
+            /*if (prawo == true && tlo.Left > -1290)
             {
                 tlo.Left -= predkoscTla;
                 MoveGameElements("tyl");
@@ -53,7 +58,7 @@ namespace Sunset_Rider
             {
                 tlo.Left += predkoscTla;
                 MoveGameElements("przod");
-            }
+            }*/
 
             if (skok == true)
             {
@@ -121,28 +126,56 @@ namespace Sunset_Rider
 
             if (e.KeyCode == Keys.Right)
             {
+                facingLeft = false;
                 prawo = true;
+                facingRight = true;
+                if (gifIsNotLoaded == true)
+                {
+                    gracz.Image = Image.FromFile("ruchwprawo.gif");
+                    gifIsNotLoaded = false;
+                }
             }
-            if (e.KeyCode== Keys.Left)
+            if (e.KeyCode == Keys.Left)
             {
+                facingRight = false;
                 lewo = true;
+                facingLeft = true;
+                if (gifIsNotLoaded == true)
+                {
+                    gracz.Image = Image.FromFile("ruchwlewo.gif");
+                    gifIsNotLoaded = false;
+                }
             }
 
             if (skok == false && e.KeyCode == Keys.Space)
             {
                 skok = true;
+                if (facingRight == true)
+                {
+                    gracz.Image = Image.FromFile("ruchwprawo3.png");
+                }
+
+                if (facingLeft == true)
+                {
+                    gracz.Image = Image.FromFile("ruchwlewo3.png");
+                }
             }
         }
 
         private void KeyisUp(object sender, KeyEventArgs e)
         {
+            gifIsNotLoaded = true;
             if (e.KeyCode == Keys.Right)
             {
                 prawo = false;
+                if (skok != true)
+                    gracz.Image = Image.FromFile("ruchwprawo2.gif");
             }
             if (e.KeyCode == Keys.Left)
             {
                 lewo = false;
+                if (skok != true)
+                    gracz.Image = Image.FromFile("ruchwlewo2.gif");
             }
             if (skok == true)
             {
@@ -162,6 +195,7 @@ namespace Sunset_Rider
             noweOkno.Show();
             this.Hide();
         }
+        /*
         private void MoveGameElements(string kierunek)
         {
             foreach (Control x in this.Controls)
@@ -178,6 +212,6 @@ namespace Sunset_Rider
                     }
                 }
             }
-        }
+        }*/
     }
 }
