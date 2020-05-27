@@ -14,12 +14,15 @@ namespace Sunset_Rider
     {
         bool lewo;
         bool prawo;
-        bool skok; 
+        bool jump; 
         bool maKlucz;
 
         int wynik = 0;
-        int force = 8;
-        int predkoscSkoku = 10;
+        //int force = 8;
+        //int predkoscSkoku = 10;
+
+        int G = 8; //wysokosc skoku
+        int force;
 
         //int predkoscTla = 8;
         int predkoscGracza = 10;
@@ -37,7 +40,6 @@ namespace Sunset_Rider
         private void MainTimerEvent(object sender, EventArgs e)
         {
             txtScore.Text = "Wynik: " + wynik;
-            gracz.Top += predkoscSkoku;
 
             if (prawo == true && gracz.Left + (gracz.Width+60)<this.ClientSize.Width)
             {
@@ -60,6 +62,32 @@ namespace Sunset_Rider
                 MoveGameElements("przod");
             }*/
 
+            //spadanie jezeli gracz skoczyl
+            
+            if (jump == true)
+            {
+                gracz.Top -= force;
+                force -= 1;
+            }
+
+            if (gracz.Top + gracz.Height >= gracz.Height)
+            {
+                    gracz.Top -= force;
+                    force -= 1;
+                if (prawo == true)
+                    gracz.Image = Image.FromFile("ruchwprawo3.png");
+                if (lewo == true)
+                    gracz.Image = Image.FromFile("ruchwlewo3.png");
+                jump = false;
+            }   
+            else
+            {
+                gracz.Top += 5;
+            }
+            
+
+
+            /*
             if (skok == true)
             {
                 predkoscSkoku = -12;
@@ -73,15 +101,17 @@ namespace Sunset_Rider
             {
                 skok = false;
             }
+            */
             foreach (Control x in this.Controls)
             {
                 if (x is PictureBox && (string)x.Tag == "platform")
                 {
-                    if (gracz.Bounds.IntersectsWith(x.Bounds) && skok ==false)
+                    if (gracz.Bounds.IntersectsWith(x.Bounds)  /* && jump ==false*/)
                     {
-                        force = 8;
+                        //G = 8;
                         gracz.Top = x.Top - gracz.Height;
-                        predkoscSkoku = 0;
+                        //force = 0;
+                        jump = false;
                     }
 
                     x.BringToFront();
@@ -146,10 +176,10 @@ namespace Sunset_Rider
                     gifIsNotLoaded = false;
                 }
             }
-
-            if (skok == false && e.KeyCode == Keys.Space)
+            /*
+            if (jump == false && e.KeyCode == Keys.Space)
             {
-                skok = true;
+                jump = true;
                 if (facingRight == true)
                 {
                     gracz.Image = Image.FromFile("ruchwprawo3.png");
@@ -160,6 +190,24 @@ namespace Sunset_Rider
                     gracz.Image = Image.FromFile("ruchwlewo3.png");
                 }
             }
+            */
+            if (jump != true)
+            {
+                if (e.KeyCode == Keys.Up)
+                {
+                    jump = true;
+                    force = G;
+                    if (facingRight == true)
+                    {
+                        gracz.Image = Image.FromFile("ruchwprawo3.png");
+                    }
+
+                    if (facingLeft == true)
+                    {
+                        gracz.Image = Image.FromFile("ruchwlewo3.png");
+                    }
+                }
+            }
         }
 
         private void KeyisUp(object sender, KeyEventArgs e)
@@ -168,19 +216,21 @@ namespace Sunset_Rider
             if (e.KeyCode == Keys.Right)
             {
                 prawo = false;
-                if (skok != true)
+                if (jump != true)
                     gracz.Image = Image.FromFile("ruchwprawo2.gif");
             }
             if (e.KeyCode == Keys.Left)
             {
                 lewo = false;
-                if (skok != true)
+                if (jump != true)
                     gracz.Image = Image.FromFile("ruchwlewo2.gif");
             }
-            if (skok == true)
+            /*
+            if (jump == true)
             {
-                skok = false;
+                jump = false;
             }
+            */
         }
 
         private void CloseGame(object sender, FormClosedEventArgs e)
