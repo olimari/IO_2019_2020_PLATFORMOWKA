@@ -4,27 +4,32 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Sunset_Rider
 {
     public partial class Form1 : Form
     {
+
+        static public bool pause = false;
+        static public bool close = false;
+
         bool lewo;
         bool prawo;
-        bool jump; 
+        bool jump;
         bool maKlucz;
 
         int wynik = 0;
-        //int force = 8;
-        //int predkoscSkoku = 10;
+
 
         int G = 8; //wysokosc skoku
         int force;
 
-        //int predkoscTla = 8;
+
         int predkoscGracza = 10;
 
 
@@ -39,116 +44,91 @@ namespace Sunset_Rider
 
         private void MainTimerEvent(object sender, EventArgs e)
         {
-            txtScore.Text = "Wynik: " + wynik;
+            if (!pause)
+            {
+                txtScore.Text = "Wynik: " + wynik;
 
-            if (prawo == true && gracz.Left + (gracz.Width+60)<this.ClientSize.Width)
-            {
-                gracz.Left += predkoscGracza;
-            }
+                if (prawo == true && gracz.Left + (gracz.Width + 60) < this.ClientSize.Width)
+                {
+                    gracz.Left += predkoscGracza;
+                }
 
-            if (lewo == true && gracz.Left > 60)
-            {
-                gracz.Left -= predkoscGracza;
-            }
+                if (lewo == true && gracz.Left > 60)
+                {
+                    gracz.Left -= predkoscGracza;
+                }
 
-            /*if (prawo == true && tlo.Left > -1290)
-            {
-                tlo.Left -= predkoscTla;
-                MoveGameElements("tyl");
-            }
-            if (lewo == true && tlo.Left < 0)
-            {
-                tlo.Left += predkoscTla;
-                MoveGameElements("przod");
-            }*/
+                //spadanie jezeli gracz skoczyl
 
-            //spadanie jezeli gracz skoczyl
-            
-            if (jump == true)
-            {
-                gracz.Top -= force;
-                force -= 1;
-            }
-
-            if (gracz.Top + gracz.Height >= gracz.Height)
-            {
+                if (jump == true)
+                {
                     gracz.Top -= force;
                     force -= 1;
-                if (prawo == true)
-                    gracz.Image = Image.FromFile("ruchwprawo3.png");
-                if (lewo == true)
-                    gracz.Image = Image.FromFile("ruchwlewo3.png");
-                jump = false;
-            }   
-            else
-            {
-                gracz.Top += 5;
-            }
-            
-
-
-            /*
-            if (skok == true)
-            {
-                predkoscSkoku = -12;
-                force -= 1;
-            }
-            else
-            {
-                predkoscSkoku = 12;
-            }
-            if (skok == true && force < 0)
-            {
-                skok = false;
-            }
-            */
-            foreach (Control x in this.Controls)
-            {
-                if (x is PictureBox && (string)x.Tag == "platform")
-                {
-                    if (gracz.Bounds.IntersectsWith(x.Bounds)  /* && jump ==false*/)
-                    {
-                        //G = 8;
-                        gracz.Top = x.Top - gracz.Height;
-                        //force = 0;
-                        jump = false;
-                    }
-
-                    x.BringToFront();
-
                 }
 
-                if ( x is PictureBox && (string)x.Tag == "money")
+                if (gracz.Top + gracz.Height >= gracz.Height)
                 {
-                    if (gracz.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
+                    gracz.Top -= force;
+                    force -= 1;
+                    if (prawo == true)
+                        gracz.Image = Image.FromFile("ruchwprawo3.png");
+                    if (lewo == true)
+                        gracz.Image = Image.FromFile("ruchwlewo3.png");
+                }
+                else
+                {
+                    gracz.Top += 5;
+                }
+                foreach (Control x in this.Controls)
+                {
+                    if (x is PictureBox && (string)x.Tag == "platform")
                     {
-                        x.Visible = false;
-                        wynik++;
+                        if (gracz.Bounds.IntersectsWith(x.Bounds)  /* && jump ==false*/)
+                        {
+                            //G = 8;
+                            gracz.Top = x.Top - gracz.Height;
+                            //force = 0;
+                            jump = false;
+                        }
+
+                        x.BringToFront();
+
+                    }
+
+                    if (x is PictureBox && (string)x.Tag == "money")
+                    {
+                        if (gracz.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
+                        {
+                            x.Visible = false;
+                            wynik++;
+                        }
                     }
                 }
-            }
 
-            if (gracz.Bounds.IntersectsWith(klucz.Bounds))
-            {
-                klucz.Visible = false;
-                maKlucz = true;
-            }
+                if (gracz.Bounds.IntersectsWith(klucz.Bounds))
+                {
+                    klucz.Visible = false;
+                    maKlucz = true;
+                }
 
-            if (gracz.Bounds.IntersectsWith(portal.Bounds) && maKlucz ==true)
-            {
-                portal.Image = Properties.Resources.portalotwarty;
-                GameTimer.Stop();
-                MessageBox.Show("Brawo! Twoja gra zakończyła się sukcesem!" + Environment.NewLine + "Wcisnij OK, aby zagrac jeszcze raz");
-                Restart();
+                if (gracz.Bounds.IntersectsWith(portal.Bounds) && maKlucz == true)
+                {
+                    portal.Image = Properties.Resources.portalotwarty;
+                    GameTimer.Stop();
+                    MessageBox.Show("Brawo! Twoja gra zakończyła się sukcesem!" + Environment.NewLine + "Wcisnij OK, aby zagrac jeszcze raz");
+                    //Restart();
+                }
+                if (gracz.Top + gracz.Height > this.ClientSize.Height)
+                {
+                    GameTimer.Stop();
+                    MessageBox.Show("Porażka! Koniec gry." + Environment.NewLine + "Wcisnij OK, aby zagrac jeszcze raz");
+                    //Restart();
+                }
+                if (close == true)
+                {
+                    this.Close();
+                }
             }
-            if (gracz.Top + gracz.Height >this.ClientSize.Height)
-            {
-                GameTimer.Stop();
-                MessageBox.Show("Porażka! Koniec gry." + Environment.NewLine + "Wcisnij OK, aby zagrac jeszcze raz");
-                Restart();
-            }
-
-
         }
 
         private void KeyisDown(object sender, KeyEventArgs e)
@@ -176,21 +156,33 @@ namespace Sunset_Rider
                     gifIsNotLoaded = false;
                 }
             }
-            /*
-            if (jump == false && e.KeyCode == Keys.Space)
+            if (e.KeyCode == Keys.Escape)
             {
-                jump = true;
-                if (facingRight == true)
+                pauza p = new pauza();
+                pause = !pause;
+
+                if (pause == true)
                 {
-                    gracz.Image = Image.FromFile("ruchwprawo3.png");
+                    p.ShowDialog();
+                    //GameTimer.Stop();
                 }
 
-                if (facingLeft == true)
+                if(pauza.formclose == true)
                 {
-                    gracz.Image = Image.FromFile("ruchwlewo3.png");
+                    pauza.formclose = false;
+                    this.Hide();
+
+                    menu m = new menu();
+                    m.ShowDialog();
                 }
+                if(pauza.formrestart == true)
+                {
+                    pauza.formrestart = false;
+                    Restart();
+                }
+
             }
-            */
+
             if (jump != true)
             {
                 if (e.KeyCode == Keys.Up)
@@ -225,43 +217,18 @@ namespace Sunset_Rider
                 if (jump != true)
                     gracz.Image = Image.FromFile("ruchwlewo2.gif");
             }
-            /*
-            if (jump == true)
-            {
-                jump = false;
-            }
-            */
         }
 
         private void CloseGame(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
-
         }
 
-        private void Restart()
+        public void Restart()
         {
             Form1 noweOkno = new Form1();
             noweOkno.Show();
             this.Hide();
         }
-        /*
-        private void MoveGameElements(string kierunek)
-        {
-            foreach (Control x in this.Controls)
-            {
-                if (x is PictureBox && (string)x.Tag == "portal" || x is PictureBox && (string)x.Tag == "klucz" || x is PictureBox && (string)x.Tag == "money" || x is PictureBox && (string)x.Tag == "platform")
-                {
-                    if (kierunek == "tyl")
-                    {
-                        x.Left -= predkoscTla;
-                    }
-                    if (kierunek == "przod")
-                    {
-                        x.Left += predkoscTla;
-                    }
-                }
-            }
-        }*/
     }
 }

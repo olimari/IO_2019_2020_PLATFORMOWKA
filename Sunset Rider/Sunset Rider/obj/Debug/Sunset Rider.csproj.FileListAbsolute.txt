@@ -18,3 +18,16 @@ C:\Users\Reshard\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.pdb
 C:\Users\Reshard\Desktop\Sunset Rider\Sunset Rider\bin\Debug\Sunset Rider.exe.config
 C:\Users\Reshard\Desktop\Sunset Rider\Sunset Rider\bin\Debug\Sunset Rider.exe
 C:\Users\Reshard\Desktop\Sunset Rider\Sunset Rider\bin\Debug\Sunset Rider.pdb
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\bin\Debug\Sunset Rider.exe.config
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\bin\Debug\Sunset Rider.exe
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.csprojAssemblyReference.cache
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.Form1.resources
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.Properties.Resources.resources
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.csproj.GenerateResource.cache
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.csproj.CoreCompileInputs.cache
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.exe
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\obj\Debug\Sunset Rider.pdb
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\bin\Debug\Sunset Rider.pdb
+C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.menu.resources
+C:\Users\Reshard\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.menu.resources
+C:\Users\Reshard\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.pauza.resources

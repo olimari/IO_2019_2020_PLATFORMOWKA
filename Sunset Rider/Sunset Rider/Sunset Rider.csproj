@@ -52,10 +52,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="pauza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pauza.Designer.cs">
+      <DependentUpon>pauza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pauza.resx">
+      <DependentUpon>pauza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,6 +151,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lewitujaca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pausescreen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okno1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newgame2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\levels1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newgame3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menubg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pausescreen1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resume.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

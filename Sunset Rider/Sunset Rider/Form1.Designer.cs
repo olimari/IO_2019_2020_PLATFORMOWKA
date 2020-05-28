@@ -75,6 +75,7 @@
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.screen = new System.Windows.Forms.PictureBox();
+            this.pauseBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.klucz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gracz)).BeginInit();
@@ -119,6 +120,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.screen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pauseBox)).BeginInit();
             this.SuspendLayout();
             // 
             // klucz
@@ -681,6 +683,17 @@
             this.screen.TabIndex = 17;
             this.screen.TabStop = false;
             // 
+            // pauseBox
+            // 
+            this.pauseBox.BackColor = System.Drawing.Color.Transparent;
+            this.pauseBox.Image = global::Sunset_Rider.Properties.Resources.pausescreen;
+            this.pauseBox.Location = new System.Drawing.Point(663, 83);
+            this.pauseBox.Name = "pauseBox";
+            this.pauseBox.Size = new System.Drawing.Size(174, 181);
+            this.pauseBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pauseBox.TabIndex = 18;
+            this.pauseBox.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -732,9 +745,11 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.platform);
             this.Controls.Add(this.screen);
+            this.Controls.Add(this.pauseBox);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Sunset Rider";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CloseGame);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyisDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyisUp);
@@ -782,6 +797,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.screen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pauseBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -833,7 +849,8 @@
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox screen;
+        private System.Windows.Forms.PictureBox pauseBox;
+        public System.Windows.Forms.PictureBox screen;
     }
 }
 
