@@ -9,17 +9,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using WMPLib;
 
 namespace Sunset_Rider
 {
     public partial class Form1 : Form
     {
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
+        WindowsMediaPlayer moneyy = new WindowsMediaPlayer();
+        WindowsMediaPlayer key = new WindowsMediaPlayer();
+        WindowsMediaPlayer winner = new WindowsMediaPlayer();
 
         static public bool pause = false;
         static public bool close = false;
 
-        bool lewo;
-        bool prawo;
+        bool lewo = false;
+        bool prawo = false;
         bool jump = false;
         bool maKlucz;
 
@@ -34,16 +39,21 @@ namespace Sunset_Rider
 
 
         bool gifIsNotLoaded = true; //instrukcja do pomocy obslugi animacji chodzenia
-        bool facingRight = false;
-        bool facingLeft = false;
 
         public Form1()
         {
             InitializeComponent();
+            
+            player.URL = "thegroove.mp3";
+            moneyy.URL = "hajs.wav";
+            key.URL = "klucz.wav";
+            winner.URL = "win.wav";
         }
 
         private void MainTimerEvent(object sender, EventArgs e)
         {
+            player.controls.play();
+            
             if (!pause)
             {
                 txtScore.Text = "Wynik: " + wynik;
@@ -105,6 +115,8 @@ namespace Sunset_Rider
                     {
                         if (gracz.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
                         {
+                            moneyy.controls.play();
+                            
                             x.Visible = false;
                             wynik++;
                         }
@@ -113,6 +125,8 @@ namespace Sunset_Rider
 
                 if (gracz.Bounds.IntersectsWith(klucz.Bounds))
                 {
+                    key.controls.play();
+                     
                     klucz.Visible = false;
                     maKlucz = true;
                     portal.Image = Properties.Resources.portalotwarty;
@@ -120,6 +134,9 @@ namespace Sunset_Rider
 
                 if (gracz.Bounds.IntersectsWith(portal.Bounds) && maKlucz == true) //gracz wygrywa
                 {
+                    winner.controls.play();
+                    player.controls.stop();
+                    
                     GameTimer.Stop();
                     win wygrana = new win();
                     wygrana.ShowDialog();
@@ -143,6 +160,7 @@ namespace Sunset_Rider
 
                 if (gracz.Top + gracz.Height > this.ClientSize.Height) // gracz przegrywa
                 {
+                    player.controls.stop();
                     GameTimer.Stop();
                     lose przegrana = new lose();
                     przegrana.ShowDialog();
@@ -174,9 +192,7 @@ namespace Sunset_Rider
 
             if (e.KeyCode == Keys.Right)
             {
-                facingLeft = false;
                 prawo = true;
-                facingRight = true;
                 if (gifIsNotLoaded == true)
                 {
                     gracz.Image = Image.FromFile("ruchwprawo.gif");
@@ -185,9 +201,7 @@ namespace Sunset_Rider
             }
             if (e.KeyCode == Keys.Left)
             {
-                facingRight = false;
                 lewo = true;
-                facingLeft = true;
                 if (gifIsNotLoaded == true)
                 {
                     gracz.Image = Image.FromFile("ruchwlewo.gif");
@@ -227,12 +241,12 @@ namespace Sunset_Rider
                 {
                     jump = true;
                     force = G;
-                    if (facingRight == true)
+                    if (prawo == true)
                     {
                         gracz.Image = Image.FromFile("ruchwprawo3.png");
                     }
 
-                    if (facingLeft == true)
+                    if (lewo == true)
                     {
                         gracz.Image = Image.FromFile("ruchwlewo3.png");
                     }
