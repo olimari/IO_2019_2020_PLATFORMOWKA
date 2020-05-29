@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="win.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="win.Designer.cs">
+      <DependentUpon>win.cs</DependentUpon>
+    </Compile>
     <Compile Include="lose.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +100,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="win.resx">
+      <DependentUpon>win.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -205,6 +214,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\restart1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resume1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\victoryscreen.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

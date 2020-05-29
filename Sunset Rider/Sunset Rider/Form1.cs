@@ -20,7 +20,7 @@ namespace Sunset_Rider
 
         bool lewo;
         bool prawo;
-        bool jump;
+        bool jump = false;
         bool maKlucz;
 
         int wynik = 0;
@@ -70,10 +70,10 @@ namespace Sunset_Rider
                 {
                     gracz.Top -= force;
                     force -= 1;
-                    if (prawo == true)
-                        gracz.Image = Image.FromFile("ruchwprawo3.png");
-                    if (lewo == true)
-                        gracz.Image = Image.FromFile("ruchwlewo3.png");
+                    if (prawo == true && gifIsNotLoaded)
+                        gracz.Image = Image.FromFile("ruchwprawo.gif");
+                    if (lewo == true && gifIsNotLoaded)
+                        gracz.Image = Image.FromFile("ruchwlewo.gif");
                 }
                 else
                 {
@@ -87,8 +87,14 @@ namespace Sunset_Rider
                         {
                             //G = 8;
                             gracz.Top = x.Top - gracz.Height;
-                            //force = 0;
+                            force = 0;
+
+                            if (jump)
+                            {
+                                gracz.Image = Image.FromFile("ruchwprawo.gif");
+                            }
                             jump = false;
+                            
                         }
 
                         x.BringToFront();
@@ -109,16 +115,33 @@ namespace Sunset_Rider
                 {
                     klucz.Visible = false;
                     maKlucz = true;
+                    portal.Image = Properties.Resources.portalotwarty;
                 }
 
-                if (gracz.Bounds.IntersectsWith(portal.Bounds) && maKlucz == true)
+                if (gracz.Bounds.IntersectsWith(portal.Bounds) && maKlucz == true) //gracz wygrywa
                 {
-                    portal.Image = Properties.Resources.portalotwarty;
                     GameTimer.Stop();
-                    MessageBox.Show("Brawo! Twoja gra zakończyła się sukcesem!" + Environment.NewLine + "Wcisnij OK, aby zagrac jeszcze raz");
-                    //Restart();
+                    win wygrana = new win();
+                    wygrana.ShowDialog();
+
+                    if (pauza.formclose == true)
+                    {
+                        pauza.formclose = false;
+                        this.Hide();
+
+                        menu m = new menu();
+                        m.ShowDialog();
+                    }
+
+                    if (pauza.formrestart == true)
+                    {
+                        pauza.formrestart = false;
+                        Restart();
+                    }
                 }
-                if (gracz.Top + gracz.Height > this.ClientSize.Height)
+
+
+                if (gracz.Top + gracz.Height > this.ClientSize.Height) // gracz przegrywa
                 {
                     GameTimer.Stop();
                     lose przegrana = new lose();

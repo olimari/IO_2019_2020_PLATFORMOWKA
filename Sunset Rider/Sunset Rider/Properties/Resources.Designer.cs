@@ -333,6 +333,16 @@ namespace Sunset_Rider.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap resume1 {
+            get {
+                object obj = ResourceManager.GetObject("resume1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ruchwlewo {
             get {
                 object obj = ResourceManager.GetObject("ruchwlewo", resourceCulture);
@@ -386,6 +396,16 @@ namespace Sunset_Rider.Properties {
         internal static System.Drawing.Bitmap ruchwprawo3 {
             get {
                 object obj = ResourceManager.GetObject("ruchwprawo3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap victoryscreen {
+            get {
+                object obj = ResourceManager.GetObject("victoryscreen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

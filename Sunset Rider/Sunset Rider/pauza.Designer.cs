@@ -51,7 +51,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Sunset_Rider.Properties.Resources.resume;
+            this.pictureBox2.Image = global::Sunset_Rider.Properties.Resources.resume1;
             this.pictureBox2.Location = new System.Drawing.Point(167, 294);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
