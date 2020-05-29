@@ -15,6 +15,7 @@ namespace Sunset_Rider
     {
         public lose()
         {
+
             InitializeComponent(); 
             player.URL = "fail.wav";
         }
@@ -22,7 +23,7 @@ namespace Sunset_Rider
         private void menu_Click(object sender, EventArgs e)
         {
             player.controls.play();
-            
+
             Form1.pause = false;
             pauza.formclose = true;
             this.Close();
