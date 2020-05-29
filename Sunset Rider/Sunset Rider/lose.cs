@@ -15,13 +15,15 @@ namespace Sunset_Rider
     {
         public lose()
         {
-            InitializeComponent();
+
+            InitializeComponent(); 
             player.URL = "fail.wav";
         }
 
         private void menu_Click(object sender, EventArgs e)
         {
             player.controls.play();
+
             Form1.pause = false;
             pauza.formclose = true;
             this.Close();
@@ -30,6 +32,7 @@ namespace Sunset_Rider
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             player.controls.play();
+            
             Form1.pause = false;
             pauza.formrestart = true;
             this.Close();
