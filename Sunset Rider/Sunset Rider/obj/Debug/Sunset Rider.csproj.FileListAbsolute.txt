@@ -31,3 +31,4 @@ C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Ri
 C:\Users\Reshard\Desktop\IO_2019_2020_PLATFORMOWKA-master\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.menu.resources
 C:\Users\Reshard\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.menu.resources
 C:\Users\Reshard\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.pauza.resources
+C:\Users\Reshard\Desktop\Sunset Rider\Sunset Rider\obj\Debug\Sunset_Rider.lose.resources

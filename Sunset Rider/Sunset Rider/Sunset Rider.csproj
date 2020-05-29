@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="lose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lose.Designer.cs">
+      <DependentUpon>lose.cs</DependentUpon>
+    </Compile>
     <Compile Include="pauza.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +74,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lose.resx">
+      <DependentUpon>lose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="pauza.resx">
       <DependentUpon>pauza.cs</DependentUpon>
@@ -187,6 +196,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\resume.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lose.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart1.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

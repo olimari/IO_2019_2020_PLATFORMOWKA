@@ -121,8 +121,23 @@ namespace Sunset_Rider
                 if (gracz.Top + gracz.Height > this.ClientSize.Height)
                 {
                     GameTimer.Stop();
-                    MessageBox.Show("Porażka! Koniec gry." + Environment.NewLine + "Wcisnij OK, aby zagrac jeszcze raz");
-                    //Restart();
+                    lose przegrana = new lose();
+                    przegrana.ShowDialog();
+
+                    if (pauza.formclose == true)
+                    {
+                        pauza.formclose = false;
+                        this.Hide();
+
+                        menu m = new menu();
+                        m.ShowDialog();
+                    }
+
+                    if (pauza.formrestart == true)
+                    {
+                        pauza.formrestart = false;
+                        Restart();
+                    }
                 }
                 if (close == true)
                 {

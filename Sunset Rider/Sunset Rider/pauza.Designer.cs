@@ -40,7 +40,7 @@
             // 
             this.backtomenu.BackColor = System.Drawing.Color.Transparent;
             this.backtomenu.Image = global::Sunset_Rider.Properties.Resources.home;
-            this.backtomenu.Location = new System.Drawing.Point(70, 188);
+            this.backtomenu.Location = new System.Drawing.Point(61, 188);
             this.backtomenu.Name = "backtomenu";
             this.backtomenu.Size = new System.Drawing.Size(100, 100);
             this.backtomenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -52,7 +52,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Sunset_Rider.Properties.Resources.resume;
-            this.pictureBox2.Location = new System.Drawing.Point(176, 294);
+            this.pictureBox2.Location = new System.Drawing.Point(167, 294);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -64,7 +64,7 @@
             // 
             this.restart.BackColor = System.Drawing.Color.Transparent;
             this.restart.Image = global::Sunset_Rider.Properties.Resources.restart;
-            this.restart.Location = new System.Drawing.Point(282, 188);
+            this.restart.Location = new System.Drawing.Point(273, 188);
             this.restart.Name = "restart";
             this.restart.Size = new System.Drawing.Size(100, 100);
             this.restart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -78,7 +78,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Sunset_Rider.Properties.Resources.pausescreen1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(453, 437);
+            this.ClientSize = new System.Drawing.Size(435, 437);
             this.Controls.Add(this.restart);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.backtomenu);
