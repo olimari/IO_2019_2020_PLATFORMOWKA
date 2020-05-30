@@ -127,10 +127,10 @@
             // 
             this.klucz.BackColor = System.Drawing.Color.Transparent;
             this.klucz.Image = global::Sunset_Rider.Properties.Resources.key;
-            this.klucz.Location = new System.Drawing.Point(1260, 26);
-            this.klucz.Margin = new System.Windows.Forms.Padding(2);
+            this.klucz.Location = new System.Drawing.Point(1680, 32);
+            this.klucz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.klucz.Name = "klucz";
-            this.klucz.Size = new System.Drawing.Size(75, 62);
+            this.klucz.Size = new System.Drawing.Size(100, 76);
             this.klucz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.klucz.TabIndex = 5;
             this.klucz.TabStop = false;
@@ -140,10 +140,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Sunset_Rider.Properties.Resources.lewitujaca;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 83);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 102);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(113, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -153,10 +153,10 @@
             // 
             this.gracz.BackColor = System.Drawing.Color.Transparent;
             this.gracz.Image = global::Sunset_Rider.Properties.Resources.ruchwprawo2;
-            this.gracz.Location = new System.Drawing.Point(0, 307);
-            this.gracz.Margin = new System.Windows.Forms.Padding(2);
+            this.gracz.Location = new System.Drawing.Point(0, 378);
+            this.gracz.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gracz.Name = "gracz";
-            this.gracz.Size = new System.Drawing.Size(56, 67);
+            this.gracz.Size = new System.Drawing.Size(75, 82);
             this.gracz.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gracz.TabIndex = 4;
             this.gracz.TabStop = false;
@@ -166,10 +166,10 @@
             // 
             this.portal.BackColor = System.Drawing.Color.Transparent;
             this.portal.Image = global::Sunset_Rider.Properties.Resources.portalzamkniety;
-            this.portal.Location = new System.Drawing.Point(20, 11);
-            this.portal.Margin = new System.Windows.Forms.Padding(2);
+            this.portal.Location = new System.Drawing.Point(27, 14);
+            this.portal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.portal.Name = "portal";
-            this.portal.Size = new System.Drawing.Size(47, 70);
+            this.portal.Size = new System.Drawing.Size(63, 86);
             this.portal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.portal.TabIndex = 3;
             this.portal.TabStop = false;
@@ -178,10 +178,10 @@
             // pictureBox12
             // 
             this.pictureBox12.BackgroundImage = global::Sunset_Rider.Properties.Resources.platforma4;
-            this.pictureBox12.Location = new System.Drawing.Point(1400, 121);
-            this.pictureBox12.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox12.Location = new System.Drawing.Point(1867, 149);
+            this.pictureBox12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(48, 285);
+            this.pictureBox12.Size = new System.Drawing.Size(64, 351);
             this.pictureBox12.TabIndex = 1;
             this.pictureBox12.TabStop = false;
             this.pictureBox12.Tag = "platform";
@@ -189,10 +189,10 @@
             // pictureBox11
             // 
             this.pictureBox11.BackgroundImage = global::Sunset_Rider.Properties.Resources.platform2;
-            this.pictureBox11.Location = new System.Drawing.Point(2161, 356);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox11.Location = new System.Drawing.Point(2881, 438);
+            this.pictureBox11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(191, 32);
+            this.pictureBox11.Size = new System.Drawing.Size(255, 39);
             this.pictureBox11.TabIndex = 1;
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Tag = "platform";
@@ -200,10 +200,10 @@
             // pictureBox9
             // 
             this.pictureBox9.BackgroundImage = global::Sunset_Rider.Properties.Resources.platform2;
-            this.pictureBox9.Location = new System.Drawing.Point(1959, 476);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox9.Location = new System.Drawing.Point(2612, 586);
+            this.pictureBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(224, 32);
+            this.pictureBox9.Size = new System.Drawing.Size(299, 39);
             this.pictureBox9.TabIndex = 1;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Tag = "platform";
@@ -212,10 +212,10 @@
             // 
             this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox18.Image = global::Sunset_Rider.Properties.Resources.lewitujaca;
-            this.pictureBox18.Location = new System.Drawing.Point(887, 288);
-            this.pictureBox18.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox18.Location = new System.Drawing.Point(1183, 354);
+            this.pictureBox18.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(147, 37);
+            this.pictureBox18.Size = new System.Drawing.Size(196, 46);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 1;
             this.pictureBox18.TabStop = false;
@@ -225,10 +225,10 @@
             // 
             this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox14.Image = global::Sunset_Rider.Properties.Resources.lewitujaca;
-            this.pictureBox14.Location = new System.Drawing.Point(586, 264);
-            this.pictureBox14.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox14.Location = new System.Drawing.Point(781, 325);
+            this.pictureBox14.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(202, 32);
+            this.pictureBox14.Size = new System.Drawing.Size(269, 39);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 1;
             this.pictureBox14.TabStop = false;
@@ -238,10 +238,10 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = global::Sunset_Rider.Properties.Resources.lewitujaca;
-            this.pictureBox5.Location = new System.Drawing.Point(305, 83);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Location = new System.Drawing.Point(407, 102);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(130, 32);
+            this.pictureBox5.Size = new System.Drawing.Size(173, 39);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
@@ -251,10 +251,10 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.Image = global::Sunset_Rider.Properties.Resources.lewitujaca;
-            this.pictureBox4.Location = new System.Drawing.Point(285, 307);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Location = new System.Drawing.Point(380, 378);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(101, 32);
+            this.pictureBox4.Size = new System.Drawing.Size(135, 39);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 1;
             this.pictureBox4.TabStop = false;
@@ -264,10 +264,10 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::Sunset_Rider.Properties.Resources.lewitujaca;
-            this.pictureBox3.Location = new System.Drawing.Point(131, 180);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(175, 222);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(96, 32);
+            this.pictureBox3.Size = new System.Drawing.Size(128, 39);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 1;
             this.pictureBox3.TabStop = false;
@@ -277,10 +277,10 @@
             // 
             this.platform.BackColor = System.Drawing.Color.Transparent;
             this.platform.Image = global::Sunset_Rider.Properties.Resources.platforma4;
-            this.platform.Location = new System.Drawing.Point(0, 373);
-            this.platform.Margin = new System.Windows.Forms.Padding(2);
+            this.platform.Location = new System.Drawing.Point(0, 459);
+            this.platform.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.platform.Name = "platform";
-            this.platform.Size = new System.Drawing.Size(131, 32);
+            this.platform.Size = new System.Drawing.Size(175, 39);
             this.platform.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.platform.TabIndex = 1;
             this.platform.TabStop = false;
@@ -289,10 +289,10 @@
             // money
             // 
             this.money.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.money.Location = new System.Drawing.Point(131, 144);
-            this.money.Margin = new System.Windows.Forms.Padding(2);
+            this.money.Location = new System.Drawing.Point(175, 177);
+            this.money.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.money.Name = "money";
-            this.money.Size = new System.Drawing.Size(38, 20);
+            this.money.Size = new System.Drawing.Size(51, 25);
             this.money.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.money.TabIndex = 6;
             this.money.TabStop = false;
@@ -301,10 +301,10 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox17.Location = new System.Drawing.Point(690, 239);
-            this.pictureBox17.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox17.Location = new System.Drawing.Point(920, 294);
+            this.pictureBox17.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox17.Size = new System.Drawing.Size(51, 25);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 6;
             this.pictureBox17.TabStop = false;
@@ -313,10 +313,10 @@
             // pictureBox19
             // 
             this.pictureBox19.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox19.Location = new System.Drawing.Point(639, 239);
-            this.pictureBox19.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox19.Location = new System.Drawing.Point(852, 294);
+            this.pictureBox19.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox19.Size = new System.Drawing.Size(51, 25);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 6;
             this.pictureBox19.TabStop = false;
@@ -325,10 +325,10 @@
             // pictureBox20
             // 
             this.pictureBox20.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox20.Location = new System.Drawing.Point(715, 41);
-            this.pictureBox20.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox20.Location = new System.Drawing.Point(953, 50);
+            this.pictureBox20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox20.Name = "pictureBox20";
-            this.pictureBox20.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox20.Size = new System.Drawing.Size(51, 25);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox20.TabIndex = 6;
             this.pictureBox20.TabStop = false;
@@ -337,10 +337,10 @@
             // pictureBox21
             // 
             this.pictureBox21.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox21.Location = new System.Drawing.Point(812, 41);
-            this.pictureBox21.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox21.Location = new System.Drawing.Point(1083, 50);
+            this.pictureBox21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox21.Size = new System.Drawing.Size(51, 25);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox21.TabIndex = 6;
             this.pictureBox21.TabStop = false;
@@ -349,10 +349,10 @@
             // pictureBox22
             // 
             this.pictureBox22.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox22.Location = new System.Drawing.Point(914, 264);
-            this.pictureBox22.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox22.Location = new System.Drawing.Point(1219, 325);
+            this.pictureBox22.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox22.Size = new System.Drawing.Size(51, 25);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 6;
             this.pictureBox22.TabStop = false;
@@ -361,10 +361,10 @@
             // pictureBox24
             // 
             this.pictureBox24.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox24.Location = new System.Drawing.Point(944, 239);
-            this.pictureBox24.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox24.Location = new System.Drawing.Point(1259, 294);
+            this.pictureBox24.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox24.Size = new System.Drawing.Size(51, 25);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox24.TabIndex = 6;
             this.pictureBox24.TabStop = false;
@@ -373,10 +373,10 @@
             // pictureBox25
             // 
             this.pictureBox25.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox25.Location = new System.Drawing.Point(975, 264);
-            this.pictureBox25.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox25.Location = new System.Drawing.Point(1300, 325);
+            this.pictureBox25.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox25.Size = new System.Drawing.Size(51, 25);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox25.TabIndex = 6;
             this.pictureBox25.TabStop = false;
@@ -385,10 +385,10 @@
             // pictureBox26
             // 
             this.pictureBox26.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox26.Location = new System.Drawing.Point(1098, 349);
-            this.pictureBox26.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox26.Location = new System.Drawing.Point(1464, 430);
+            this.pictureBox26.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox26.Name = "pictureBox26";
-            this.pictureBox26.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox26.Size = new System.Drawing.Size(51, 25);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox26.TabIndex = 6;
             this.pictureBox26.TabStop = false;
@@ -397,10 +397,10 @@
             // pictureBox27
             // 
             this.pictureBox27.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox27.Location = new System.Drawing.Point(1140, 349);
-            this.pictureBox27.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox27.Location = new System.Drawing.Point(1520, 430);
+            this.pictureBox27.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox27.Size = new System.Drawing.Size(51, 25);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox27.TabIndex = 6;
             this.pictureBox27.TabStop = false;
@@ -409,10 +409,10 @@
             // pictureBox28
             // 
             this.pictureBox28.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox28.Location = new System.Drawing.Point(1182, 349);
-            this.pictureBox28.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox28.Location = new System.Drawing.Point(1576, 430);
+            this.pictureBox28.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox28.Name = "pictureBox28";
-            this.pictureBox28.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox28.Size = new System.Drawing.Size(51, 25);
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox28.TabIndex = 6;
             this.pictureBox28.TabStop = false;
@@ -421,10 +421,10 @@
             // pictureBox29
             // 
             this.pictureBox29.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox29.Location = new System.Drawing.Point(1224, 349);
-            this.pictureBox29.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox29.Location = new System.Drawing.Point(1632, 430);
+            this.pictureBox29.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox29.Size = new System.Drawing.Size(51, 25);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox29.TabIndex = 6;
             this.pictureBox29.TabStop = false;
@@ -433,10 +433,10 @@
             // pictureBox30
             // 
             this.pictureBox30.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox30.Location = new System.Drawing.Point(1140, 301);
-            this.pictureBox30.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox30.Location = new System.Drawing.Point(1520, 370);
+            this.pictureBox30.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox30.Size = new System.Drawing.Size(51, 25);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox30.TabIndex = 6;
             this.pictureBox30.TabStop = false;
@@ -445,10 +445,10 @@
             // pictureBox31
             // 
             this.pictureBox31.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox31.Location = new System.Drawing.Point(1182, 301);
-            this.pictureBox31.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox31.Location = new System.Drawing.Point(1576, 370);
+            this.pictureBox31.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox31.Size = new System.Drawing.Size(51, 25);
             this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox31.TabIndex = 6;
             this.pictureBox31.TabStop = false;
@@ -457,10 +457,10 @@
             // pictureBox32
             // 
             this.pictureBox32.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox32.Location = new System.Drawing.Point(1160, 276);
-            this.pictureBox32.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox32.Location = new System.Drawing.Point(1547, 340);
+            this.pictureBox32.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox32.Name = "pictureBox32";
-            this.pictureBox32.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox32.Size = new System.Drawing.Size(51, 25);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox32.TabIndex = 6;
             this.pictureBox32.TabStop = false;
@@ -469,10 +469,10 @@
             // pictureBox33
             // 
             this.pictureBox33.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox33.Location = new System.Drawing.Point(1114, 327);
-            this.pictureBox33.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox33.Location = new System.Drawing.Point(1485, 402);
+            this.pictureBox33.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox33.Size = new System.Drawing.Size(51, 25);
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox33.TabIndex = 6;
             this.pictureBox33.TabStop = false;
@@ -481,10 +481,10 @@
             // pictureBox34
             // 
             this.pictureBox34.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox34.Location = new System.Drawing.Point(1202, 327);
-            this.pictureBox34.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox34.Location = new System.Drawing.Point(1603, 402);
+            this.pictureBox34.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox34.Name = "pictureBox34";
-            this.pictureBox34.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox34.Size = new System.Drawing.Size(51, 25);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox34.TabIndex = 6;
             this.pictureBox34.TabStop = false;
@@ -493,10 +493,10 @@
             // pictureBox35
             // 
             this.pictureBox35.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox35.Location = new System.Drawing.Point(1160, 323);
-            this.pictureBox35.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox35.Location = new System.Drawing.Point(1547, 398);
+            this.pictureBox35.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox35.Size = new System.Drawing.Size(51, 25);
             this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox35.TabIndex = 6;
             this.pictureBox35.TabStop = false;
@@ -505,10 +505,10 @@
             // pictureBox36
             // 
             this.pictureBox36.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox36.Location = new System.Drawing.Point(419, 41);
-            this.pictureBox36.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox36.Location = new System.Drawing.Point(559, 50);
+            this.pictureBox36.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox36.Size = new System.Drawing.Size(51, 25);
             this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox36.TabIndex = 6;
             this.pictureBox36.TabStop = false;
@@ -518,10 +518,10 @@
             // 
             this.pictureBox37.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox37.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox37.Location = new System.Drawing.Point(189, 144);
-            this.pictureBox37.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox37.Location = new System.Drawing.Point(252, 177);
+            this.pictureBox37.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox37.Name = "pictureBox37";
-            this.pictureBox37.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox37.Size = new System.Drawing.Size(51, 25);
             this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox37.TabIndex = 6;
             this.pictureBox37.TabStop = false;
@@ -531,10 +531,9 @@
             // 
             this.txtScore.AutoSize = true;
             this.txtScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.txtScore.Location = new System.Drawing.Point(368, 7);
-            this.txtScore.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtScore.Location = new System.Drawing.Point(491, 9);
             this.txtScore.Name = "txtScore";
-            this.txtScore.Size = new System.Drawing.Size(89, 24);
+            this.txtScore.Size = new System.Drawing.Size(110, 29);
             this.txtScore.TabIndex = 7;
             this.txtScore.Text = "Wynik: 0";
             // 
@@ -547,10 +546,10 @@
             // pictureBox38
             // 
             this.pictureBox38.Image = global::Sunset_Rider.Properties.Resources.money;
-            this.pictureBox38.Location = new System.Drawing.Point(320, 264);
-            this.pictureBox38.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox38.Location = new System.Drawing.Point(427, 325);
+            this.pictureBox38.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(38, 20);
+            this.pictureBox38.Size = new System.Drawing.Size(51, 25);
             this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox38.TabIndex = 6;
             this.pictureBox38.TabStop = false;
@@ -560,10 +559,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::Sunset_Rider.Properties.Resources.lewitujaca;
-            this.pictureBox2.Location = new System.Drawing.Point(435, 83);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(580, 102);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(130, 32);
+            this.pictureBox2.Size = new System.Drawing.Size(173, 39);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -573,10 +572,10 @@
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Image = global::Sunset_Rider.Properties.Resources.platforma4;
-            this.pictureBox7.Location = new System.Drawing.Point(131, 373);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Location = new System.Drawing.Point(175, 459);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(131, 32);
+            this.pictureBox7.Size = new System.Drawing.Size(175, 39);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 9;
             this.pictureBox7.TabStop = false;
@@ -586,10 +585,10 @@
             // 
             this.pictureBox23.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox23.Image = global::Sunset_Rider.Properties.Resources.platforma4;
-            this.pictureBox23.Location = new System.Drawing.Point(435, 373);
-            this.pictureBox23.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox23.Location = new System.Drawing.Point(580, 459);
+            this.pictureBox23.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(131, 32);
+            this.pictureBox23.Size = new System.Drawing.Size(175, 39);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox23.TabIndex = 10;
             this.pictureBox23.TabStop = false;
@@ -599,10 +598,10 @@
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox13.Image = global::Sunset_Rider.Properties.Resources.platforma4;
-            this.pictureBox13.Location = new System.Drawing.Point(566, 373);
-            this.pictureBox13.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox13.Location = new System.Drawing.Point(755, 459);
+            this.pictureBox13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(131, 32);
+            this.pictureBox13.Size = new System.Drawing.Size(175, 39);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 11;
             this.pictureBox13.TabStop = false;
@@ -612,10 +611,10 @@
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::Sunset_Rider.Properties.Resources.platforma4;
-            this.pictureBox6.Location = new System.Drawing.Point(1057, 373);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Location = new System.Drawing.Point(1409, 459);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(131, 32);
+            this.pictureBox6.Size = new System.Drawing.Size(175, 39);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 12;
             this.pictureBox6.TabStop = false;
@@ -625,10 +624,10 @@
             // 
             this.pictureBox39.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox39.Image = global::Sunset_Rider.Properties.Resources.platforma4;
-            this.pictureBox39.Location = new System.Drawing.Point(1188, 373);
-            this.pictureBox39.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox39.Location = new System.Drawing.Point(1584, 459);
+            this.pictureBox39.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox39.Name = "pictureBox39";
-            this.pictureBox39.Size = new System.Drawing.Size(131, 32);
+            this.pictureBox39.Size = new System.Drawing.Size(175, 39);
             this.pictureBox39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox39.TabIndex = 13;
             this.pictureBox39.TabStop = false;
@@ -638,10 +637,10 @@
             // 
             this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox8.Image = global::Sunset_Rider.Properties.Resources.lewitujaca;
-            this.pictureBox8.Location = new System.Drawing.Point(1041, 175);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox8.Location = new System.Drawing.Point(1388, 215);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(147, 37);
+            this.pictureBox8.Size = new System.Drawing.Size(196, 46);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 14;
             this.pictureBox8.TabStop = false;
@@ -651,10 +650,10 @@
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox15.Image = global::Sunset_Rider.Properties.Resources.lewitujaca;
-            this.pictureBox15.Location = new System.Drawing.Point(715, 83);
-            this.pictureBox15.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox15.Location = new System.Drawing.Point(953, 102);
+            this.pictureBox15.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(147, 37);
+            this.pictureBox15.Size = new System.Drawing.Size(196, 46);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 15;
             this.pictureBox15.TabStop = false;
@@ -664,10 +663,10 @@
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Image = global::Sunset_Rider.Properties.Resources.lewitujaca;
-            this.pictureBox10.Location = new System.Drawing.Point(1212, 83);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox10.Location = new System.Drawing.Point(1616, 102);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(147, 37);
+            this.pictureBox10.Size = new System.Drawing.Size(196, 46);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 16;
             this.pictureBox10.TabStop = false;
@@ -678,8 +677,9 @@
             this.screen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.screen.Image = global::Sunset_Rider.Properties.Resources.background2;
             this.screen.Location = new System.Drawing.Point(0, 0);
+            this.screen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.screen.Name = "screen";
-            this.screen.Size = new System.Drawing.Size(1370, 405);
+            this.screen.Size = new System.Drawing.Size(1827, 498);
             this.screen.TabIndex = 17;
             this.screen.TabStop = false;
             // 
@@ -687,19 +687,20 @@
             // 
             this.pauseBox.BackColor = System.Drawing.Color.Transparent;
             this.pauseBox.Image = global::Sunset_Rider.Properties.Resources.pausescreen;
-            this.pauseBox.Location = new System.Drawing.Point(663, 83);
+            this.pauseBox.Location = new System.Drawing.Point(884, 102);
+            this.pauseBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pauseBox.Name = "pauseBox";
-            this.pauseBox.Size = new System.Drawing.Size(174, 181);
+            this.pauseBox.Size = new System.Drawing.Size(232, 223);
             this.pauseBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pauseBox.TabIndex = 18;
             this.pauseBox.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Sunset_Rider.Properties.Resources.background2;
-            this.ClientSize = new System.Drawing.Size(1370, 405);
+            this.ClientSize = new System.Drawing.Size(1827, 498);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox8);
@@ -746,7 +747,7 @@
             this.Controls.Add(this.platform);
             this.Controls.Add(this.screen);
             this.Controls.Add(this.pauseBox);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Sunset Rider";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

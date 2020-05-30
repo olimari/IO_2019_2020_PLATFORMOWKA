@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using WMPLib;
 
+
 namespace Sunset_Rider
 {
     public partial class Form1 : Form
@@ -20,11 +21,12 @@ namespace Sunset_Rider
         WindowsMediaPlayer key = new WindowsMediaPlayer();
         WindowsMediaPlayer winner = new WindowsMediaPlayer();
 
+
         static public bool pause = false;
         static public bool close = false;
 
-        bool lewo = false;
-        bool prawo = false;
+        bool lewo=false;
+        bool prawo=false;
         bool jump = false;
         bool maKlucz;
 
@@ -40,10 +42,11 @@ namespace Sunset_Rider
 
         bool gifIsNotLoaded = true; //instrukcja do pomocy obslugi animacji chodzenia
 
+
         public Form1()
         {
             InitializeComponent();
-            
+
             player.URL = "thegroove.mp3";
             moneyy.URL = "hajs.wav";
             key.URL = "klucz.wav";
@@ -53,7 +56,7 @@ namespace Sunset_Rider
         private void MainTimerEvent(object sender, EventArgs e)
         {
             player.controls.play();
-            
+
             if (!pause)
             {
                 txtScore.Text = "Wynik: " + wynik;
@@ -116,7 +119,6 @@ namespace Sunset_Rider
                         if (gracz.Bounds.IntersectsWith(x.Bounds) && x.Visible == true)
                         {
                             moneyy.controls.play();
-                            
                             x.Visible = false;
                             wynik++;
                         }
@@ -126,7 +128,6 @@ namespace Sunset_Rider
                 if (gracz.Bounds.IntersectsWith(klucz.Bounds))
                 {
                     key.controls.play();
-                     
                     klucz.Visible = false;
                     maKlucz = true;
                     portal.Image = Properties.Resources.portalotwarty;

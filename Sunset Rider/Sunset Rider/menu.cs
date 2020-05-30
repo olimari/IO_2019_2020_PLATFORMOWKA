@@ -13,6 +13,7 @@ namespace Sunset_Rider
 {
     public partial class menu : Form
     {
+        WindowsMediaPlayer player = new WindowsMediaPlayer();
         public menu()
         {
             InitializeComponent();
